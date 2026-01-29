@@ -3,11 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript in a Webpage</title>
+    <title>Chat Match - Connect with People</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button oneLick="showAlert()">Click Me</button>
-    <script src="script.js"></script>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">Chat Match</h1>
+            <p class="tagline">Connect with people around the world</p>
+        </header>
+
+        <!-- User Info Bar -->
+        <div class="user-info-bar">
+            <div class="user-profile">
+                <div class="avatar">You</div>
+                <div class="user-details">
+                    <span class="user-name">Alex</span>
+                    <span class="user-age">17</span>
+                </div>
+            </div>
+            
+            <div class="vs-divider">VS</div>
+            
+            <div class="user-profile">
+                <div class="avatar">ST</div>
+                <div class="user-details">
+                    <span class="user-name">Stranger</span>
+                    <span class="user-age">19</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Interface -->
+        <main class="chat-container">
+            <div class="status-bar">
+                <span class="status connected">Connected</span>
+                <button class="new-chat-btn">New Chat</button>
+            </div>
+
+            <div class="messages-area">
+                <div class="message other-message">
+                    <div class="message-header">
+                        <span class="sender-name">Stranger</span>
+                    </div>
+                    <div class="message-bubble">
+                        Hey! How's it going?
+                    </div>
+                    <span class="message-time">2:34 PM</span>
+                </div>
+
+                <div class="message my-message">
+                    <div class="message-header">
+                        <span class="sender-name">You</span>
+                    </div>
+                    <div class="message-bubble">
+                        Hi there! I'm doing well, thanks for asking. How about you?
+                    </div>
+                    <span class="message-time">2:35 PM</span>
+                </div>
+
+                <div class="message other-message">
+                    <div class="message-header">
+                        <span class="sender-name">Stranger</span>
+                    </div>
+                    <div class="message-bubble">
+                        Pretty good! Just relaxing on this Sunday afternoon. What grade are you in?
+                    </div>
+                    <span class="message-time">2:36 PM</span>
+                </div>
+
+                <div class="typing-indicator">
+                    <span>Stranger is typing...</span>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" class="message-input" placeholder="Type your message...">
+                <button class="send-btn">Send</button>
+                <button class="disconnect-btn">Disconnect</button>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
+
